@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from './Counter';
 // 入門
 // 基本的な型制約のやり方
 // const App = ({ message }: { message: AppProps }) => {
@@ -23,7 +24,11 @@ interface AppProps {
 
 // なので以下のように書くこと!
 const App: React.FunctionComponent<AppProps> = ({ message }) => {
-  return <div>{message}</div>;
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
 };
 
 App.defaultProps = {
