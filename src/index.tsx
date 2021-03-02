@@ -5,6 +5,6 @@ import App from './App';
 ReactDOM.render(
   // App 内部に対して message を入力した IntrinsicAttributes は本来備わっているという意味
   // key はエラーがでない attribute の定義に key が定義されているから
-  <App message="Hello, React!" />,
+  <App />,
   document.getElementById('root')
 );
