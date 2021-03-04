@@ -1,5 +1,5 @@
 import React from 'react';
-import Counter from './Counter';
+import CounterWithReducer from './CounterWithReducer';
 // 入門
 // 基本的な型制約のやり方
 // const App = ({ message }: { message: AppProps }) => {
@@ -26,7 +26,7 @@ interface AppProps {
 const App: React.FunctionComponent<AppProps> = ({ message }) => {
   return (
     <div>
-      <Counter />
+      <CounterWithReducer />
     </div>
   );
 };
